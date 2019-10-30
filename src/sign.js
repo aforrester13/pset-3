@@ -4,12 +4,16 @@ const theNumber = String(readlineSync.question("\nEnter a number: "));
 
 if (theNumber.includes(".")) {
    console.log("\nInvalid\n")
+
 } else if (theNumber < 0) {
    console.log("\nNegative\n")
-} else if (theNumber === 0) {
+
+} else if (theNumber == 0) {
    console.log("\nZero\n")
+
 } else if (theNumber > 0) {
    console.log("\nPositive\n")
+
 } else {
    console.log("\nInvalid\n")
 }
