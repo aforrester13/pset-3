@@ -1,14 +1,11 @@
 const readlineSync = require("readline-sync");
 
-const theNumber = String(readlineSync.question("\nEnter a number: "));
+const theNumber = Number(readlineSync.question("\nEnter a number: "));
 
-if (theNumber.includes(".")) {
+if (!Number.isInteger(theNumber)) {
    console.log("\nInvalid.\n")
 
-} else if (theNumber < (-9,007,199,254,740,992)) {
-   console.log("\nInvalid.\n")
-
-} else if (theNumber > 9,007,199,254,740,992) {
+} else if (theNumber < (Number.MIN_SAFE_INTEGER) || theNumber > Number.MAX_SAFE_INTEGER) {
    console.log("\nInvalid.\n")
 
 } else if (theNumber < 0) {
