@@ -1,6 +1,6 @@
 const readlineSync = require("readline-sync");
 
-const theInteger = Number(readlineSync.question("\nEnter a integer: "));
+const theInteger = Number(readlineSync.question("\nEnter an integer: "));
 
 if (!Number.isInteger(theInteger)) {
    console.log("\nInvalid.\n")
