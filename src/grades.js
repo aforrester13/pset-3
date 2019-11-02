@@ -2,22 +2,33 @@ const readlineSync = require("readline-sync");
 
 const letterGrade = Number(readlineSync.question("\nEnter a grade: "));
 
+const lowA = 90;
+const highA = 100;
+const lowB = 80;
+const highB = 89;
+const lowC = 70;
+const highC = 79
+const lowD = 60;
+const highD = 69;
+const lowF = 0;
+const highF = 59;
+
 if (letterGrade > 100 || letterGrade < 0) {
       console.log("\nInvalid\n")
 
-} else if (letterGrade >= 90 && letterGrade <= 100) {
+} else if (letterGrade >= lowA && letterGrade <= highA) {
       console.log("\nYou received an A.\n")
 
-} else if (letterGrade >= 80 && letterGrade <= 89) {
+} else if (letterGrade >= lowB && letterGrade <= highB) {
       console.log("\nYou received a B.\n")
 
-} else if (letterGrade >= 70 && letterGrade <= 79) {
+} else if (letterGrade >= lowC && letterGrade <= highC) {
       console.log("\nYou received a C.\n")
 
-} else if (letterGrade >= 60 && letterGrade <= 69) {
+} else if (letterGrade >= lowD && letterGrade <= highD) {
       console.log("\nYou received a D.\n")
 
-} else if (letterGrade >= 0 && letterGrade <= 59) {
+} else if (letterGrade >= lowF && letterGrade <= highF) {
       console.log("\nYou received an F.\n")
 
 } else {

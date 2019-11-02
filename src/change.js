@@ -6,10 +6,10 @@ const MAX = 0.99;
 
 const amount = Number(readlineSync.question("\nEnter a dollar amount: "));
 
-Q = 0.25
-D = 0.1
-N = 0.05
-P = 0.01
+const Q = 0.25
+const D = 0.1
+const N = 0.05
+const P = 0.01
 
 
 
@@ -27,5 +27,5 @@ if (Number.isNaN(amount)) {
     let amount3 = amount2 % N;
     let Pennies = Math.ceil(amount3/P);
 
-    console.log("\n" + Quarters + "quarters, " + Dimes + "dimes, " + Nickels + "nickels, and " + Pennies + "pennies." );
+    console.log("\n" + Quarters + " quarters, " + Dimes + " dimes, " + Nickels + " nickels, and " + Pennies + " pennies.\n" );
 }

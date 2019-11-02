@@ -7,6 +7,9 @@ const number3 = Number(readlineSync.question(""))
 if (number1, number2, number3 < (Number.MIN_SAFE_INTEGER) || number1, number2, number3 > Number.MAX_SAFE_INTEGER) {
    console.log("\nInvalid.\n")
 
+} else if (number1 == number2 & number2 == number3) {
+      console.log("\nEqual.\n")
+
 } else if (number1 > number2 && number2 > number3) {
       console.log("\nStrictly decreasing.\n")
 
@@ -18,9 +21,6 @@ if (number1, number2, number3 < (Number.MIN_SAFE_INTEGER) || number1, number2, n
 
 } else if (number1 <= number2 && number2 <= number3) {
       console.log("\nIncreasing.\n")
-
-} else if (number1 == number2 & number2 == number3) {
-      console.log("\nEqual.\n")
 
 } else if ((number1 >= number2 && number2 <= number3) || (number1 <= number2 && number2 >= number3)) {
       console.log("\nUnordered.\n")
