@@ -19,16 +19,16 @@ if (letterGrade > 100 || letterGrade < 0) {
 } else if (letterGrade >= lowA && letterGrade <= highA) {
       console.log("\nYou received an A.\n")
 
-} else if (letterGrade >= lowB && letterGrade <= highB) {
+} else if (letterGrade >= lowB && letterGrade < lowA) {
       console.log("\nYou received a B.\n")
 
-} else if (letterGrade >= lowC && letterGrade <= highC) {
+} else if (letterGrade >= lowC && letterGrade < lowB) {
       console.log("\nYou received a C.\n")
 
-} else if (letterGrade >= lowD && letterGrade <= highD) {
+} else if (letterGrade >= lowD && letterGrade < lowC) {
       console.log("\nYou received a D.\n")
 
-} else if (letterGrade >= lowF && letterGrade <= highF) {
+} else if (letterGrade >= lowF && letterGrade < lowD) {
       console.log("\nYou received an F.\n")
 
 } else {
